@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trang Chủ</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .baner{
+      padding-top: 0px;
+      padding-bottom: 70px;
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    .searchform {
+float: left;
+margin-top: 20px;
+border:#888888 2px solid;
+height:27px;
+width:350px;
+}
+.searchform input[type=text]
+{
+width:270px;
+height:21px;
+border:0px;
+background:"LightGray";
+float:left;
+margin:0px;padding:3px;
+}
+.searchform input[type=submit]
+{
+border:#888888 2px solid;
+float:right;
+margin:2px 2px 2px 2px;
+height:23px;
+padding-top:1px;
+background:#888888;
+}
+  </style>
+  <style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+</style>
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 950px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: :#0066FF;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<link rel='stylesheet' id='cb-main-stylesheet-css'  href='css/style.minb12b.css?ver=3.1.1' type='text/css' media='all' />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
+<style type="text/css">
+.cb-module-header .cb-module-title {
+    letter-spacing: 0;
+}
+.cb-module-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+ </style>
+</head>
+<body style="background: url(background.jpg)" class="home page page-id-13 page-template page-template-page-15zine-builder page-template-page-15zine-builder-php  cb-sidebar-right  cb-sticky-mm cb-nav-logo-on cb-logo-nav-sticky cb-sticky-sb-on  cb-tm-light cb-body-light cb-menu-dark cb-mm-dark cb-footer-dark   cb-m-sticky cb-sw-tm-fw cb-sw-header-fw cb-sw-menu-fw cb-sw-footer-fw cb-menu-al-left  cb-fis-b-off">
+<div class="banner"><img alt src="skpt_banner_3 .jpg" style="height: 130px;width: 1349px;">
+  </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="TrangChu.html#">Trang Chủ</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="DangKi.html#"><span class="glyphicon glyphicon-user"></span> Đăng Kí</a></li>
+        <li><a href="DangNhap.html#"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
+        <li><form class="navbar-form navbar-side">
+            <div id="search">
+<form class="searchform" action="" method="get">
+<input class="s" onfocus="if (this.value == 'Search this website …') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this website …';}" type="text" name="s" value="Search this website …" />
+<input class="searchsubmit" type="submit" value="Search" />
+</form>
+</div>
+          </form> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<div class="container-fluid text-center">
+    <div class="col-sm-3">
+              <button class="accordion">CNTT</button>
+              <div class="panel panel-primary"><a href="#"><img src="antoanthongtin.vn-ung dung CNTT tai VN.jpg"></a></div>
+              <button class="accordion">Khoa học - Kỹ thuật</button>
+              <div class="panel panel-primary"><a href="#"><img src="FPTcuoc.jpg"></a></div>
+              <button class="accordion">Y tế</button>
+              <div class="panel panel-primary"><a href="#"><img src="bhyt.png"></a></div>
+              <button id="foo" class="accordion">Giáo dục</button>
+              <div class="panel panel-primary"><a href="#"><img src="58582217.jpg"></a></div>
+    </div>
+    <div class="col-sm-9 text-left">
+          <div class="col-sm-12">
+          <div class="slideshow-container">
+
+          <a href="">
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="iPhone.jpg" style="width:100%">
+            <div class="text">Iphone 7 plus</div>
+          </div>
+          </a>
+
+          <a href="">
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="xiaomi-mi-5-04-1474733919964.jpg" style="width:100%">
+            <div class="text">Xiaomi</div>
+          </div>
+          </a>
+
+          <a href="">
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="xiaomi-redmi-note-3-4-1474733864205.jpg" style="width:100%">
+            <div class="text">Xiaomi 2</div>
+          </div>
+          </a>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <br>
+          </div>
+    </div>
+    <div class="col-sm-offset-3 col-sm-9">
+      <div id="cb-outer-container">
+            <div id="cb-container" class="clearfix" >
+                <div class="cb-main"> <div class="cb-module-a cb-module-block  clearfix"><div class="cb-module-header"><h2 class="cb-module-title" >CNTT</h2></div>        <article class="cb-article cb-img-above-meta cb-article-row cb-no-1 cb-article-row-2 clearfix post-218 post type-post status-publish format-standard has-post-thumbnail hentry category-whats-new">
+
+            <div class="cb-mask cb-img-fw" style="background-color: #222;">
+                <a href=""><img width="360" height="240" src="people-front-of-tech-symbols.jpg" class="attachment-cb-360-240 size-cb-360-240 wp-post-image" alt="people on bench sitting in front of a illustrated background of tech symbols and icons" /></a>                            </div>
+
+            <div class="cb-meta clearfix">
+
+                <h2 class="cb-post-title"><a href="">Illuminating the Universe&#8217;s Ignition</a></h2>
+
+                <div class="cb-byline"><span class="cb-date"><time datetime="2016-09-06">September 6, 2016</time></span></div>
+                <div class="cb-excerpt">A research team based at the University of Texas at Austin used supercomputing resources to create the first fully coupled simulation of the<span class="cb-excerpt-dots">...</span> <a href=""><span class="cb-read-more"> Read More »</span></a></div>
+                
+              
+            </div>
+
+        </article>
+        <article class="cb-article cb-img-above-meta cb-article-row cb-no-2 cb-article-row-2 clearfix post-201 post type-post status-publish format-standard has-post-thumbnail hentry category-whats-new">
+
+            <div class="cb-mask cb-img-fw" style="background-color: #222;">
+                <a href=""><img width="360" height="240" src="illustrated-person-gas-mask.jpg" class="attachment-cb-360-240 size-cb-360-240 wp-post-image" alt="black and white illustration of person in gas mask for A Scalable Modeling and Simulation Environment for Chemical Gas Emergencies" /></a>                            </div>
+
+            <div class="cb-meta clearfix">
+
+                <h2 class="cb-post-title"><a href="">A Scalable Modeling and Simulation Environment for Chemical Gas Emergencies</a></h2>
+
+                <div class="cb-byline"><span class="cb-date"><time datetime="2016-08-01">August 1, 2016</time></span></div>
+                <div class="cb-excerpt">The authors successfully interoperated the hybrid ABS model, interactive CFD model, control center model, and gas sensor model to evaluate t<span class="cb-excerpt-dots">...</span> <a href=""><span class="cb-read-more"> Read More »</span></a></div>
+            </div>
+        </article>
+</div> </div> 
+</div> 
+    </div>
+    <div id="cb-outer-container">
+            <div id="cb-container" class="clearfix" >
+                <div class="cb-main"> <div class="cb-module-a cb-module-block  clearfix"><div class="cb-module-header"><h2 class="cb-module-title" >Khoa học</h2></div>        <article class="cb-article cb-img-above-meta cb-article-row cb-no-1 cb-article-row-2 clearfix post-218 post type-post status-publish format-standard has-post-thumbnail hentry category-whats-new">
+
+            <div class="cb-mask cb-img-fw" style="background-color: #222;">
+                <a href=""><img width="360" height="240" src="people-front-of-tech-symbols.jpg" class="attachment-cb-360-240 size-cb-360-240 wp-post-image" alt="people on bench sitting in front of a illustrated background of tech symbols and icons" /></a>                            </div>
+
+            <div class="cb-meta clearfix">
+
+                <h2 class="cb-post-title"><a href="">Illuminating the Universe&#8217;s Ignition</a></h2>
+
+                <div class="cb-byline"><span class="cb-date"><time datetime="2016-09-06">September 6, 2016</time></span></div>
+                <div class="cb-excerpt">A research team based at the University of Texas at Austin used supercomputing resources to create the first fully coupled simulation of the<span class="cb-excerpt-dots">...</span> <a href=""><span class="cb-read-more"> Read More »</span></a></div>
+                
+              
+            </div>
+
+        </article>
+        <article class="cb-article cb-img-above-meta cb-article-row cb-no-2 cb-article-row-2 clearfix post-201 post type-post status-publish format-standard has-post-thumbnail hentry category-whats-new">
+
+            <div class="cb-mask cb-img-fw" style="background-color: #222;">
+                <a href=""><img width="360" height="240" src="illustrated-person-gas-mask.jpg" class="attachment-cb-360-240 size-cb-360-240 wp-post-image" alt="black and white illustration of person in gas mask for A Scalable Modeling and Simulation Environment for Chemical Gas Emergencies" /></a>                            </div>
+
+            <div class="cb-meta clearfix">
+
+                <h2 class="cb-post-title"><a href="">A Scalable Modeling and Simulation Environment for Chemical Gas Emergencies</a></h2>
+
+                <div class="cb-byline"><span class="cb-date"><time datetime="2016-08-01">August 1, 2016</time></span></div>
+                <div class="cb-excerpt">The authors successfully interoperated the hybrid ABS model, interactive CFD model, control center model, and gas sensor model to evaluate t<span class="cb-excerpt-dots">...</span> <a href=""><span class="cb-read-more"> Read More »</span></a></div>
+            </div>
+        </article>
+</div> </div> 
+</div> 
+    </div>
+  </div>
+  <div class="col-sm-12 text-center">
+            <ul class="pagination">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>Dia chi: so 1 duong 2 khu pho 3 phuong 4     Sdt: 0123445667
+</p>
+<p>Toa nha trung tam lau 10            email: dsàhhjgfds@sfhjkdhfksjf.com</p>
+</footer>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
+

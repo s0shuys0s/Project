@@ -282,9 +282,15 @@ body {font-family: Verdana,sans-serif;}
             <a>
               <h4><B>Địa chỉ: </B>  so 1 duong 2 khu pho 3 phuong 4</h4>
             </a>
-            <div class="col-sm-offset-7 col-sm-7">
-                <a href="UpdateAdmin.html"><button type="submit" class="btn btn-default">Cập nhật</button></a>
-                <a href="ĐổiPass.html"><button type="submit" class="btn btn-default">Đổi mật khẩu</button></a>
+            <div class="form-group">
+                    <div class="col-sm-offset-3 col-xs-9">
+                    <a href="UpdateAdmin.html">
+                      <button type="submit" class="btn btn-primary" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">Cập nhật <i class="fa fa-sign-in"></i></button>
+                      </a>
+                      <a href="ĐổiPass.html">
+                      <button type="submit" class="btn btn-primary" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">Đổi mật khẩu <i class="fa fa-sign-in"></i></button>
+                      </a>
+                </div>
             </div>
           <br>
           </div>
